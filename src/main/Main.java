@@ -1,10 +1,14 @@
 package main;
 
+import bbdd.Conexion;
+import view.MainWindows;
+
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		Conexion.conectar();
+		
+		new MainWindows();
 	}
 
 }
