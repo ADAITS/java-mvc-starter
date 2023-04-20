@@ -15,4 +15,9 @@ public class UserController {
 			return null;
 		}
 	}
+
+	public void createUser(User user) {
+		new UsersService().createUser(user);
+		
+	}
 }

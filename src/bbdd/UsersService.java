@@ -24,4 +24,13 @@ public class UsersService {
 		return users;
 	}
 
+	public void createUser(User user) {
+		String username = user.getUsername();
+		String password = user.getPassword();
+		
+		String query = "INSERT INTO "+tableName+" VALUES ('"+username+"', '"+password+"')";
+		
+		Conexion.ejecutarUpdate(query);
+	}
+
 }
